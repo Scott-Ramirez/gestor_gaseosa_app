@@ -1,0 +1,114 @@
+/* Variables para modo oscuro */
+[data-theme="dark"] {
+    --primary-color: #1a1a1a;
+    --secondary-color: #2d2d2d;
+    --accent-color: #3498db;
+    --text-light: #ffffff;
+    --text-dark: #e1e1e1;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el formulario en modo oscuro */
+[data-theme="dark"] .card {
+    background: var(--secondary-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .form-control {
+    background-color: var(--primary-color);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .form-control:focus {
+    background-color: var(--primary-color);
+    border-color: var(--accent-color);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] .form-control:hover {
+    border-color: var(--accent-color);
+}
+
+/* Estilos para etiquetas y texto */
+[data-theme="dark"] .form-label {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] h1 {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .text-primary {
+    color: var(--accent-color) !important;
+}
+
+/* Estilos para botones en modo oscuro */
+[data-theme="dark"] .btn-secondary {
+    background-color: var(--secondary-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+    background-color: #495057;
+    transform: translateY(-2px);
+}
+
+[data-theme="dark"] .btn {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para alertas en modo oscuro */
+[data-theme="dark"] .alert-info {
+    background-color: rgba(52, 152, 219, 0.2);
+    border-color: rgba(52, 152, 219, 0.3);
+    color: var(--text-light);
+}
+
+/* Estilos para el sidebar en modo oscuro */
+[data-theme="dark"] .sidebar {
+    background: var(--primary-color);
+}
+
+[data-theme="dark"] .sidebar .nav-link {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .sidebar .nav-link i {
+    color: var(--accent-color);
+}
+
+[data-theme="dark"] .sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para la tabla en modo oscuro */
+[data-theme="dark"] .table {
+    background-color: #1e1e1e;
+}
+
+[data-theme="dark"] .table thead th {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .table tbody td {
+    color: var(--text-light);
+    border-color: #2d2d2d;
+}
+
+[data-theme="dark"] .table tbody tr:hover {
+    background-color: #2d2d2d;
+}

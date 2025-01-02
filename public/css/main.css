@@ -1,0 +1,227 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --text-light: #ecf0f1;
+  --text-dark: #2c3e50;
+  --bg-color: #f5f6fa;
+  --card-bg: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  transition: background-color 0.3s ease;
+}
+
+.sidebar {
+  background: var(--primary-color);
+  min-height: 100vh;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px var(--shadow-color);
+}
+
+.sidebar .nav-link {
+  color: var(--text-light);
+  padding: 0.8rem 1rem;
+  margin: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.sidebar .nav-link i {
+  margin-right: 12px;
+  width: 20px;
+  text-align: center;
+  font-size: 1.1em;
+  color: var(--accent-color);
+}
+
+.sidebar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+.sidebar .nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+.navbar {
+  background: var(--primary-color) !important;
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content h1 {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 25px;
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.dashboard-stats {
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px var(--shadow-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para el switch */
+.form-switch .form-check-input {
+  width: 2em;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+/* Estilos para el formulario */
+.card {
+  background: var(--card-bg);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  background-color: var(--bg-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+
+.form-label {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Estilos para la tabla */
+.table {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin-bottom: 2rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border: none;
+}
+
+.table thead th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.table thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.table thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.table tbody td {
+  padding: 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--shadow-color);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(52, 152, 219, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Estilos para los botones en la tabla */
+.table .btn {
+  margin: 0 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.table .btn-warning {
+  background-color: #f7c32e;
+  border: none;
+  color: #000;
+}
+
+.table .btn-warning:hover {
+  background-color: #f0b60a;
+  transform: translateY(-1px);
+}
+
+.table .btn-danger {
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+}
+
+.table .btn-danger:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
